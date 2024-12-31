@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <!-- <p id="demo"></p>
+        <script>
+            let x = new Boolean(true);
+
+            let y = new Boolean(true)
+            document.getElementById("demo").innerHTML=  x==y; -->
+            <script>
+                
+                            const number = [1,2,2,3];
+                            const number1 =[9,9,9,99];
+                            const number2 = [4,3,2,1];
+            function arrayObject(arr){
+                const obj = {};
+            for(let i=0; i<arr.length; i++){
+               
+               if(obj[arr[i]]){
+                obj[arr[i]]++;  arr=+i
+               } 
+               else{
+                obj[arr[i]]=1;
+               }
+        
+            }
+            return obj;
+        }
+
+// const arr2 = [9,9,9,99];
+// const arr3 = [4,3,2,1];
+const name = arrayObject(number);
+const name1 = arrayObject(number1);
+const name2 = arrayObject(number2);
+        console.log(name);
+        console.log(name1);
+        console.log(name2);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            // const person ={
+            //     fname:"vishal",
+            //     lname:"sinh",
+            //     age:35
+            // }
+            // let allname ="" 
+            // for(let x in person){
+            //     allname+=person[x];
+            // }
+            // document.getElementById("demo").innerHTML=allname;
+
+            // adding properties in object
+
+            // const person={
+            //     fname:"vishal",
+            //     lname:"sinh",
+            //     age:{
+            //         age1:38,
+            //         age2:54,
+            //         age3:77
+            //     }
+            // }
+            // // person.nationality="indian";
+            // // delete properties in object
+            // // delete person.age;
+            // // nested object
+            //  let p1="age";
+            //  let p2="age3";
+
+            // document .getElementById("demo").innerHTML=person[p1][p2];
+
+            // const objname = {
+            //     name:"vishal",
+            //     age:30,
+            //     cars:[
+            //           {name:"forde",models:["Fiesta", "Focus", "Mustang"]},
+            //           {name:"bmw",models:["320","x2","x5"]},
+            //           {name:"fiat",models:["500","panda"]}
+            // ]
+            // }
+
+            // for(let x in objname.cars){
+            //    console.log( objname.cars[x].name)
+            //    for(let y in objname.cars[x].models){
+            //     console.log(objname.cars[x].models[y]);
+            //    }
+            // }
+
+            
+            // const person ={
+            //     fname:"vishal",
+            //     lname:"sinh",
+            //     age:35
+            // };
+            // person.name=function(){
+            //     return(this.fname+ this.lname).toUpperCase();
+            // }
+            
+            // document.getElementById("demo").innerHTML= person.name();
+
+            // object in loop.
+
+                const person ={
+                fname:"vishal",
+                lname:"sinh",
+                age:["John", "Peter", "Sally", "Jane"]
+            };
+
+            // text=""
+            // for(let x in person){
+            //      text+=person[x]
+            // }
+            //stringify in object 
+            // document.getElementById("demo").innerHTML= JSON.stringify(object);
+
+            // stringify in function 
+
+            //   person.age= person.age.toString()
+            //   document.getElementById("demo").innerHTML=JSON.stringify(person); 
+           
+            // strigify array
+
+             document.getElementById("demo").innerHTML=JSON.stringify(person);
+
+
+   </script>
+    </body>
+</html>

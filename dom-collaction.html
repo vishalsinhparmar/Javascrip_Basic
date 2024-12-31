@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p>hi my name is vishal</p>
+        <p>this is my second choise</p>
+        <p id="demo"></p>
+        <button type="button" onclick="myfunction()">please click me</button>
+        <script>
+            // const mycollection = document.getElementsByTagName('p');
+            // document.getElementById("demo").innerHTML='the innner html have paragraph is:'+mycollection[0].innerHTML;
+               
+            function myfunction(){
+                const mycollaction=document.getElementsByTagName('p');
+                for(let i=0; i<mycollaction.length; i++){
+                    mycollaction[i].style.color="pink";
+                }
+            }
+        </script>
+    </body>
+</html>

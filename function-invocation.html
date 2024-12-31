@@ -1,0 +1,61 @@
+<html>
+    <body>
+         <p id="demo"></p>
+        <script>
+            //    function myfunction(age,name){
+            //       this.myage=age;
+            //       this.myname=name;
+
+            //    }
+            //    const myObj= new myfunction(23,"vishal");
+            //    document.getElementById("demo").innerHTML=myObj.myage;
+
+            // const person ={
+            //     name:"vishal",
+            //     age:21,
+            //     fullname:function(){
+            //        return this.name+""+this.age;
+            //     }
+            // }
+            // function in apply
+            // const person1={
+            //     fullname:function(city,country){
+            //         return this.firstname+""+this.lastname+"<br>"+city+"<br>"+country;
+            //     }
+
+            // }
+            // const person2={
+            //     firstname:"vishal",
+            //     lastname:"sinh"
+            // }
+            // document.getElementById("demo").innerHTML=person1.fullname.apply(person2,["una","india"]);
+
+            // const person = {
+            //     firstName:"vishal",
+            //     lastName:"sinh",
+            //     fullName:function(){
+            //       return  this.firstName +""+this.lastName
+            //     }
+
+            // }
+            // const person2 ={
+            //     firstName:"dinesh",
+            //     lastName:"sinh"
+            // }
+            // let value = person.fullName.bind(person2);
+            // document.getElementById("demo").innerHTML=value();
+
+
+            const person = {
+                firstName:"vishal",
+                lastName:"sinh",
+                display:function(){
+                    let x= document.getElementById("demo");
+                    x.innerHTML=this.firstName + "" +this.lastName           
+                 }
+            }
+            setTimeout(person.display.bind(person),3000)
+
+        </script>
+    </body>
+</html>

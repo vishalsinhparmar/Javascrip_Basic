@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            // class cars{
+            //     constructor(name,age){
+            //         this.name = name;
+            //         this.age= age;  
+            //     }
+            // }
+            // const mycar1 = new cars("ford",24);
+            // document.getElementById("demo").innerHTML=mycar1.name;
+
+        //     class person{
+        //         constructor(name){
+        //           this.fname=name
+        //         }
+        //     }
+        // // creating an object
+        // const person1=new person("vishal");
+        // const person2 = new person("jayesh");
+        // document.getElementById("demo").innerHTML=person1.fname+"<br>"+person2.fname;
+
+        class person{
+            constructor(name){
+                this.fname=name;
+
+            
+            }
+            greet(){
+                document.getElementById("demo").innerHTML=`hello${this.fname}`;
+            }
+
+        }
+        const display = new person("vishal");
+        
+
+        display.greet();
+        document.write(display.fname)   
+
+
+        </script>
+    </body>
+</html>

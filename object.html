@@ -1,0 +1,106 @@
+<html>
+<body>
+    <p id="demo"></p>
+    
+
+<script>
+
+
+// const personName = {
+//     name:"vishal",
+//     age:25,
+//     collage:"h.b kotak"
+// }
+// // function myFunction(){
+// //       personName.collage;
+// // }
+// document.getElementById("demo").innerHTML= personName.collage;
+
+// const personName = {
+//     name:"vishal",
+//     age:25,
+//     collage:"h.b kotak",
+//     fullname:function(){
+//         return this.name+""+this.age;
+
+//     }
+
+// }
+
+
+
+// document.getElementById("demo").innerHTML=personName.fullname();
+// object using a new keyword
+
+// const person = new Object();
+// person.firstname="vishal";
+// person.lastname="sinh";
+// person.age=24;
+// document.getElementById("demo").innerHTML="this person nsme is  "+person.firstname+person.lastname
+
+
+// object are also mutable.
+
+const personName = {
+    name:"vishal",
+    age:25,
+    collage:"h.b kotak",
+};
+const x= personName;
+x.name=30;
+document.getElementById("demo").innerHTML=personName.name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     const person = {
+//         name:'vishal',
+//         age:34,
+//         marks:{
+//             subject:"science",
+//             marks:66
+//         }
+//     };
+//     console.log(person.marks.marks);
+    
+//     //object by initialization method 
+
+//     const emloyee = {
+//         name:"vishal",
+//         age:21,
+//         marks:223
+//     }
+//     console.log(emloyee.age);
+    
+
+//     //object by constructor
+
+//     function emloyee(age,name,salary){
+//         this.age=age;
+//         this.name=name;
+//         this.salary=salary
+//     }
+//     const nm = new emloyee(21,"vishal",3200);
+//     document.write(nm.age+"<br>"+nm.salary);
+   
+//    //object by instance
+
+//    let demo = new Object();
+//    demo.id= 3;
+//    demo.name='vishal';
+//    demo.number=8849290014;
+//    document.write(demo.id+"<br>"+demo.name);
+
+
+</script>
+</body>
+</html>

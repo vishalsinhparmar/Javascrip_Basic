@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subtotal Price Calculator</title>
+  <style>
+    /* Basic CSS for styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      width: 300px;
+      margin: 0 auto;
+    }
+    input[type="number"] {
+      width: 100px;
+    }
+    .result {
+      margin-top: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Subtotal Price Calculator</h2>
+    <div>
+      <label for="product1UnitPrice">Product 1 Unit Price:</label>
+      <input type="number" id="product1UnitPrice" placeholder="Enter unit price">
+      <label for="product1Quantity">Quantity:</label>
+      <input type="number" id="product1Quantity" placeholder="Enter quantity">
+      <div class="result" id="product1Result"></div>
+    </div>
+    <div>
+      <label for="product2UnitPrice">Product 2 Unit Price:</label>
+      <input type="number" id="product2UnitPrice" placeholder="Enter unit price">
+      <label for="product2Quantity">Quantity:</label>
+      <input type="number" id="product2Quantity" placeholder="Enter quantity">
+      <div class="result" id="product2Result"></div>
+    </div>
+  </div>
+
+  <script>
+    // Function to calculate subtotal price
+    function calculateSubtotal(unitPrice, quantity) {
+      return unitPrice * quantity;
+    }
+
+    // Function to update subtotal result for a product
+    function updateSubtotal(productId) {
+      const unitPriceInput = document.getElementById(`${productId}UnitPrice`);
+      const quantityInput = document.getElementById(`${productId}Quantity`);
+      const resultDiv = document.getElementById(`${productId}Result`);
+
+      const unitPrice = parseFloat(unitPriceInput.value);
+      const quantity = parseInt(quantityInput.value);
+
+      if (!isNaN(unitPrice) && !isNaN(quantity)) {
+        const subtotal = calculateSubtotal(unitPrice, quantity);
+        resultDiv.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
+      } else {
+        resultDiv.textContent = 'Please enter valid numbers';
+      }
+    }
+
+    // Event listeners to update subtotal on input change
+    document.getElementById('product1UnitPrice').addEventListener('input', function() {
+      updateSubtotal('product1');
+    });
+    document.getElementById('product1Quantity').addEventListener('input', function() {
+      updateSubtotal('product1');
+    });
+    document.getElementById('product2UnitPrice').addEventListener('input', function() {
+      updateSubtotal('product2');
+    });
+    document.getElementById('product2Quantity').addEventListener('input', function() {
+      updateSubtotal('product2');
+    });
+  </script>
+</body>
+</html>
+

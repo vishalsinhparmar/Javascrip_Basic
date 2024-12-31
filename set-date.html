@@ -1,0 +1,21 @@
+<html> 
+    <body>
+        <p id="demo"></p>
+        <script>
+            // const myDate = new Date();
+            // myDate.setSeconds(59);
+            // document.getElementById("demo").innerHTML=myDate;
+             let text;
+            const today = new Date();
+            const someyday = new Date();
+            someyday.setFullYear("2100,0,22")
+            if(someyday>today){
+               text= "today is greater than"
+            }           
+            else{
+                text ="today is not greater than"
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        //     const person = [45, 4, 9, 16, 25];
+        //     person.map(myfunction);
+        //    function myfunction(value){
+        //     return value*2;}
+        //     document.getElementById("demo").innerHTML=person;
+
+
+            // flatmap introduced in 2019
+            // const person1 = [45, 4, 9, 16, 25];
+            // const myarray = person1.flatMap((x)=>x*2);
+            // document.getElementById("demo").innerHTML=myarray;
+
+        //     const fruits=new Map([
+        //         ["apples",65],
+        //         ["bananas",848],
+        //         ["orange",455]
+        //     ])
+        //    fruits.delete("apples")
+        //     // fruits.has("apples")
+        //      document.getElementById("demo").innerHTML=fruits.has("apples");
+        // const fruits=new Map([
+        //         ["apples",65],
+        //         ["bananas",848],
+        //         ["orange",455]
+        //     ])
+        //     let str ="";
+        // fruits.forEach(function (value,keys){
+        //     str+=keys+ "="+ value +"<br>";
+        // })
+        // document.getElementById("demo").innerHTML=str;
+
+        // enteries in map function
+        const fruits = new Map([
+            ["apples",45],
+            ["orange",54],
+            ["banana",66]
+        ])
+        let str = ""
+        for(let x of fruits.entries()){
+            str+=x+"<br>"
+        }
+        document.getElementById("demo").innerHTML=str;
+        </script>
+    </body>
+</html>

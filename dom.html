@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script>
+     
+        document.getElementById("demo").innerHTML = "Hello World!";
+    </script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        /* button{
+            background-color: aqua;
+            width: 200px;
+            padding: 50px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style> */
+    -->
+    <style>
+            html { font-family: sans-serif; color: #333; }
+            body { max-width: 500px; margin: 0 auto; padding: 0 15px; }
+            div, article { padding: 10px; margin: 5px; border: 1px solid #dedede; }
+    </style>
+</head>
+<body>
+
+ 
+    <h1>Accessing Elements in the DOM</h1>
+
+    <h2>ID (#demo)</h2>
+    <div id="demo">Access me by ID</div>
+  
+    <h2>Class (.demo)</h2>
+    <div class="demo">Access me by class (1)</div>
+    <div class="demo">Access me by class (2)</div>
+  
+    <h2>Tag (article)</h2>
+    <article>Access me by tag (1)</article>
+    <article>Access me by tag (2)</article>
+  
+    <h2>Query Selector</h2>
+    <div id="demo-query">Access me by query</div>
+  
+    <h2>Query Selector All</h2>
+    <div class="demo-query-all">Access me by query all (1)</div>
+    <div class="demo-query-all">Access me by query all (2)</div>
+    <script>
+            // const x = document.getElementById("mybtn");
+            // x.addEventListener("mouseover" ,myfunction1);
+            // x.addEventListener("click",myfunction2);
+            // x.addEventListener("mouseout",myfunction3);
+            // function myfunction1(){
+            //     document.getElementById("demo").innerHTML+="mouseover!<br>"
+            // }
+            // function myfunction2(){
+            //     document.getElementById("demo").innerHTML+="click me!<br>"
+
+            // }
+            // function myfunction3(){
+            //     document.getElementById("demo").innerHTML+="click me!<br>"
+
+            // }
+
+            // const p1 = 3;
+            // const p2 = 6;
+            // document.getElementById("mybtn").addEventListener("click",function() {
+            //     myfunction1(p1,p2)
+
+            // })
+            // function myfunction1(a,b){
+            //     document.getElementById("demo").innerHTML=a*b;
+
+            // }
+        // const element = document.getElementsByClassName("intro");
+        // document.getElementById("demo").innerHTML="this is paragaraph:"+element[0].innerHTML
+
+    //    const element= document.querySelector("p.demo");
+    //    document.getElementById("demo.").innerHTML=element[1].innerHTML
+        // const democlass = document.getElementsByClassName('demo');
+         const name = document.querySelectorAll(".demo-query-all");
+        // name[0].style.border="1px solid green";
+        //   name.style.border="1px solid orange";
+        for(i=0; i<name.length; i++){
+            name[i].style.border="1px solid orange";
+        }   
+
+    
+
+            
+    </script>
+ 
+</body>
+</html>

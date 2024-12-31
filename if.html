@@ -1,0 +1,44 @@
+<html>
+    
+    <!-- <input type="text" id="demo" value="19"> -->
+    <!-- <button onclick="myfunction()">click me</button> -->
+    <p id="demo"></p>
+<script>
+//     function myfunction(){
+//    let len= document.getElementById("demo").value;
+//     let name;
+//     if(len>10){
+//         name="this is greater than value"
+//     }else{
+//         name="this less than value"
+//     }
+//     document.getElementById("str").innerHTML=name;
+    // }
+
+    // let a = 20;
+    // let b = 49;
+    // if(a>b || a<30){
+    //     document.write('this is print')
+    //     if(a<30){
+    //                  document.write('<br>this is another print')
+    //     }
+        
+    // }
+    // else{
+    //     document.write('this is print if it is greater than value')
+    // }
+
+    let greeting;
+        let date=new Date().setHours(23);
+        if(date<10){
+           greeting="morning day";
+        }
+        else if(date<18){
+           greeting="good day";
+        }
+        else{
+            greeting="good evening";
+        }
+document.getElementById("demo").innerHTML=greeting;
+</script>
+</html>

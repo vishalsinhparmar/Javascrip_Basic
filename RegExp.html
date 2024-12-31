@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <input type="email" id="email"/>
+        <button type="button" onclick=>submit</button>
+        <script>
+            // const regexp = new RegExp(/^a...s$/);
+            // document.getElementById("demo").innerHTML=regexp.test('alias');
+           
+            function validemail(emailaddress){
+                let emailaddress= document.getElementById("email").value;
+                const ree = /\S+@\S+\.\S+/g;
+                let str=ree.test(emailaddress) 
+                
+                if(str){
+                    emailaddress="the email is valid"
+
+                }else{
+                    emailaddress="please enter a valid email"
+                }
+            }
+            
+            validemail(emailaddress);
+        
+            
+        </script>
+    </body>
+</html>

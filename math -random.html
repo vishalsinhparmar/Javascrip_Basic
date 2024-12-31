@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML=myfunction(0,10)';
+        >click me</button>
+        
+        <script>
+            // document.getElementById("demo").innerHTML=Math.floor(Math.random()*100);
+            function myfunction(min,max){
+                    return Math.floor(Math.random()*(max-min)+1)+min;
+            }
+        //  document.getElementById("demo");
+        // myfunction(0,10);
+           </script>
+
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <body> 
+         <p id="demo"></p>
+         <!-- <input type="button" onclick="newDoc"> -->
+         <button onclick="clearInterval(Myvar)">stop me</button>
+         <!-- <button type="button" onclick="clearTimeout(Myvar)">stop me</button> -->
+         <!-- <button type="button" value ="loadd anew document" onclick="newDoc">click me </button> -->
+        <script>
+            //  all the global varible are method of window object
+            // all the global function are method of window object
+            //  html DOM is the properties of th window object.
+
+            // document.getElementById("demo").innerHTML="height:"+window.innerHeight+"px<br>"+"width:"+window.innerWidth +"px"
+            // // function newDoc(){
+            // //     window.location.assign("https://www.w3schools.com");
+            // }
+
+            // function myDoc(){
+            //     let txt;
+            //     if(confirm("press button")){
+            //             txt = "you press is ok"
+            //     }
+            //     else{
+            //         txt="you press is cancel"
+            //     };
+            //     document.getElementById("demo").innerHTML=txt;
+            // }
+           
+
+            // let myfav=prompt("your favourite cocktiles name","coca-cola");
+            // let text;
+            // switch(myfav){
+            //     case "coca-cola":
+            //     text="Excellent choice! Coca-Cola is good for your soul";
+            //     break;
+            //     case "sprite":
+            //     text="are you sure sprite is good for you?";
+            //     break;
+            //     default:
+            //     text="i have never heard about that"    
+            // }
+
+
+            // document.getElementById("demo").innerHTML=text;
+
+                // function myfunction(){
+                //     let person =prompt("what is you name please fill the name","parmar vishal");
+                //     let txt;
+                //     if(person==null|| person==""){
+                //        txt ="please enter a name"
+                    
+                //     }else{
+                //         txt ="hii "+person+"  all good"
+                //     }
+                //     document.getElementById("demo").innerHTML=txt;
+                // }
+           
+                // function myfunction(){
+                //     alert("hii evryone");
+                // }
+                //    let Myvar= setInterval(myfunction,1000)
+              
+                let Myvar = setInterval(myfunction,1000)
+                   function myfunction(){
+                     let d = new Date();
+                     document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+                   }
+                 
+
+                // let person = alert("hii my name is vishal")
+        </script>
+    </body>
+</html>

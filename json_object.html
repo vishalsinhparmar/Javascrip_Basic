@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        //    const person = '{"name":"vishal","age":23,"city":"rajkot","car":"null"}'
+        //    const str = JSON.parse(person);
+        //    let txt = "";
+        //    for(const x in str){
+        //       txt+=str[x]+",";
+        //    }
+        //    document.getElementById("demo").innerHTML=txt;
+
+        //json array
+
+        // const person = '{"name":vishal","age":23,"cars":["fiat","audi","BMW"]}';
+        //             //    '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+        // const obj = JSON.parse(person);
+        // let txt="";
+        // for(let i=0; i<obj.cars.length; i++){
+        //     txt+=obj.cars[i]+",";
+        // }
+        // document.getElementById("demo").innerHTML=txt;
+
+
+       const isJSON = '{"name":"vishal","age":23,"cars":["BMW","fiat","RR"]}';
+       const myobject = JSON.parse(isJSON);
+       let str = "";
+       for(let i=0; i<myobject.cars.length; i++){
+        str+=myobject.cars[i]+",";
+       }
+       document.getElementById("demo").innerHTML=str;
+
+
+    </script>
+</html>

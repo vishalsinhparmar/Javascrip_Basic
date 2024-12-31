@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            async function name(){
+                document.getElementById("demo").innerHTML="hii my name is vishal";
+                return Promise.resolve(1);
+                
+            }
+            name().then(function(result){
+                document.getElementById("demo").innerHTML=result;
+            })
+        </script>
+    </body>
+</html>

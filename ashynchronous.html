@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //    setTimeout(function(){
+            //     myfunction("hii my name is vishal");},3000
+            //    );
+               
+               
+            //    function myfunction(value){
+            //     document.getElementById("demo").innerHTML=value;
+            //    }
+
+            // using callback type date;
+             setInterval(myfunction,1000)
+            function myfunction(){
+                let date = new Date();
+               document.getElementById("demo").innerHTML= date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+            }
+              
+        </script>
+    </body>
+</html>

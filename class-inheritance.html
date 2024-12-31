@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            // class car{
+            //     constructor(bra){
+            //        this.brand=bra;
+
+            //     }
+            //     person(){
+            //         return "car model is "+this.brand;
+            //     }
+            // }
+            // class display extends car{
+            //     constructor(bra,mod){
+            //         super(bra)
+            //         this.model=mod;
+
+            //     }
+            //     test(){
+            //         return this.person()+' model name is '+this.model
+            //     }
+            // }
+            // const person1=new display("ford","mustang");
+            // document.getElementById("demo").innerHTML=person1.test();
+
+
+
+            // getter and setter method;
+
+            class cars{
+                constructor(brand){
+                      this._name=brand
+                }
+                get cname(){
+                    return this._name
+                }
+                set cname(x){
+                     this._name=x;
+                }
+                
+            }
+            const person1 = new cars("mustang");
+            person1.cname="mercidise"
+            document.getElementById("demo").innerHTML="this beautiful car name is:"+person1.cname
+        </script>
+
+    </body>
+</html>

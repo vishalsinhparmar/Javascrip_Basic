@@ -1,0 +1,62 @@
+<html>
+    <body>
+        <p id="demo">
+        </p>
+    </body>
+    <script>
+        // const person = {
+        //     name:"vishal",
+        //     age:21,
+        //     email:"parmarvishlsinh@gmail.com"
+        // }
+        // const txt = JSON.stringify(person);
+        // document.getElementById("demo").innerHTML=txt; 
+
+        // let myarry = ["vishal","dinesh","chagan","raman"]
+        // const isarray = JSON.stringify(myarry);
+        // document.getElementById("demo").innerHTML=isarray;
+
+        //storing a data
+        // const person = {
+        //     name:"vishal",
+        //     age:35,
+        //     city:"rajkot"
+        // }
+        // const obj = JSON.stringify(person);
+        // localStorage.setItem("item",obj);
+
+        // // retriving a data from server
+
+      
+        // let value = localStorage.getItem("item");
+        // const txt = JSON.parse(value);
+        // document.getElementById("demo").innerHTML=txt.name;
+
+
+        // storing a data in json format
+
+    //     const person = {
+    //         name:"vishal",
+    //         age:23,
+    //         email:"vishalsinhparmar821@gmail.com"
+    //     }
+    //     const string_item = JSON.stringify(person);
+    //     localStorage.setItem("item",string_item);
+
+    //     // retriving iteams from json server in form of object 
+
+    //     let str = localStorage.getItem("item")
+    // let obj = JSON.parse(str);
+     
+    //    document.getElementById("demo").innerHTML=obj.email;
+
+
+     const obj = {
+        name:"vishal",age:34,city:"rajkot",today:new Date(),age:function(){return 30}
+     };
+     obj.age = obj.age.toString();
+     const str = JSON.stringify(obj);
+     document.getElementById("demo").innerHTML=str;
+        
+    </script>
+</html>

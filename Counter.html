@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          class counter extends EventTarget {
+            constructor(initialvalue=0){
+                 super();
+                 this.value=initialvalue
+            };
+            increment(){
+            this.value++
+
+          }
+          decrement(){
+            this.value--;
+          }
+          }
+          const initialvalue = 0 ;
+           
+          const mycounter =new counter(initialvalue);
+
+          document.querySelector("#currentValue").innerText = initialvalue;
+
+          document.querySelector("#inc").addEventListener("click",()=>{
+            mycounter.increment();
+          })
+          document.querySelector("#dec").addEventListener("click",()=>{
+            mycounter.decrement();
+          })
+          
+
+    </script>
+</head>
+<body>
+      <button id="dec">-</button>
+      <span id="currentValue">0</span>
+      <button id="inc">+</button>
+</body>
+</html>

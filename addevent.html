@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 1000px;
+          
+          
+        }
+        img{
+            margin: 50px;
+            filter: grayscale(100%);
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <img src ="image/eleonora-gaini-xom4ykz-WIg-unsplash.jpg" height="400px" width="400px"  id="demo">
+    </div>
+    <script>
+        document.getElementById("demo").onmouseover=abc;
+        function abc(){
+            document.getElementById("demo").style.filter="grayscale(0%)"
+        }
+        document.getElementById("demo").onmouseout=xyz;
+        function xyz(){
+            document.getElementById("demo").style.filter="grayscale(100%)"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <button type="button" onclick="myfunction()">click me</button>
+        <p id="demo"></p>
+        <script>
+            // let counter = 0;
+            // function myfunction(){
+            //     counter=counter+1;
+            // }
+            // myfunction();
+            // myfunction();
+            // myfunction();
+            // document.getElementById("demo").innerHTML=counter;
+
+            const add = function(){
+                let counter =0;
+                
+                return function(){
+                    counter+=1;
+                     return counter
+                }
+            
+            }
+            ();
+            function myfunction(){
+                document.getElementById("demo").innerHTML= add();
+            }
+            </script>
+    </body>
+</html>
